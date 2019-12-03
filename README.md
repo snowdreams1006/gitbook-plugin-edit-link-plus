@@ -43,5 +43,7 @@ Give a ⭐️ if this project helped you!
 
 This project is [ISC](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/LICENSE) licensed.
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+## Thanks
+
+- [gitbook-plugin-editlink](https://github.com/zhaoda/gitbook-plugin-editlink)
+- [gitbook-plugin-edit-link](https://github.com/rtCamp/gitbook-plugin-edit-link)

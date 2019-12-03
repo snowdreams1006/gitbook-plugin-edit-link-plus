@@ -1,0 +1,68 @@
+{
+    "title": "edit-link-plus 插件官方文档",
+    "author": "snowdreams1006",
+    "description": "gitbook-plugin-edit-link-plus 插件官方文档",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "links": {
+        "sidebar": {
+            "技术博客": "https://snowdreams1006.tech/"
+        }
+    },
+    "plugins": [
+        "favicon-absolute",
+        "github-buttons",
+        "edit-link-plus",
+        "readmore",
+        "copyright",
+        "mygitalk"
+    ],
+    "pluginsConfig": {
+        "favicon-absolute": {
+            "favicon": "/favicon.ico",
+            "bookmark": "/bookmark.ico",
+            "appleTouchIcon152": "/apple-touch-icon-152.png",
+            "appleTouchIconPrecomposed152": "/apple-touch-icon-precomposed-152.png",
+            "appleTouchIconMore": {
+                "120x120": "/apple-touch-icon-120.png",
+                "180x180": "/apple-touch-icon-180.png"
+            },
+            "appleTouchIconPrecomposedMore": {
+                "120x120": "/apple-touch-icon-precomposed-120.png",
+                "180x180": "/apple-touch-icon-precomposed-180.png"
+            }
+        },
+        "github-buttons": {
+            "buttons": [{
+                "user": "snowdreams1006",
+                "repo": "gitbook-plugin-readmore",
+                "type": "star",
+                "size": "small"
+            }]
+        },
+        "edit-link-plus": {
+            "base": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+            "label": "编辑本页"
+        },
+        "readmore": {
+            "blogId": "15702-1569305559839-744",
+            "name": "雪之梦技术驿站",
+            "qrcode": "https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg",
+            "keyword": "vip"
+        },
+        "copyright": {
+            "site": "https://snowdreams1006.github.io/gitbook-plugin-edit-link-plus",
+            "author": "雪之梦技术驿站",
+            "website": "雪之梦技术驿站",
+            "image": "https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"
+        },
+        "mygitalk": {
+            "clientID": "3f62415a283d19cbd696",
+            "clientSecret": "aed0e1db0620bf5d0e3a3f0225f801997ad74e58",
+            "repo": "gitbook-plugin-edit-link-plus",
+            "owner": "snowdreams1006",
+            "admin": ["snowdreams1006"],
+            "distractionFreeMode": false
+        }
+    }
+}

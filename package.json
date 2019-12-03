@@ -1,0 +1,20 @@
+{
+  "name": "gitbook-plugin-edit-link-plus",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/issues"
+  },
+  "homepage": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus#readme"
+}

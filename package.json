@@ -1,8 +1,11 @@
 {
   "name": "gitbook-plugin-edit-link-plus",
   "version": "0.0.1",
-  "description": "",
+  "description": "Gitbook plugin add \"edit this page\" link, and intelligent recognition to Github or Gitlab source repository.",
   "main": "index.js",
+  "engines": {
+    "gitbook": ">=2.5.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +13,33 @@
     "type": "git",
     "url": "git+https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "gitbook-plugin-edit-link-plus",
+    "edit-link-plus",
+    "edit-link",
+    "edit-with",
+    "github",
+    "gitlab",
+    "gitee"
+  ],
+  "gitbook": {
+    "properties": {
+      "base": {
+        "type": ["string", "object"],
+        "title": "Base for the edit redirection",
+        "required": true
+      },
+      "label": {
+        "type": ["string", "object"],
+        "title": "Label for the edit button",
+        "default": "Edit This Page"
+      }
+    }
+  },
+  "author": {
+    "name": "snowdreams1006",
+    "email": "snowdreams1006@163.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/issues"

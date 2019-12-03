@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-edit-link-plus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gitbook plugin add \"edit this page\" link, and intelligent recognition to Github or Gitlab source repository.",
   "main": "index.js",
   "engines": {
@@ -25,12 +25,18 @@
   "gitbook": {
     "properties": {
       "base": {
-        "type": ["string", "object"],
+        "type": [
+          "string",
+          "object"
+        ],
         "title": "Base for the edit redirection",
         "required": true
       },
       "label": {
-        "type": ["string", "object"],
+        "type": [
+          "string",
+          "object"
+        ],
         "title": "Label for the edit button",
         "default": "Edit This Page"
       }

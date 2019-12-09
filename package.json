@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-edit-link-plus",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gitbook plugin add \"edit this page\" link, and intelligent recognition to Github or Gitlab source repository.",
   "main": "index.js",
   "engines": {

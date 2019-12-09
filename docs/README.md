@@ -13,6 +13,18 @@
 2. In `pluginsConfig`, Set `base` value which is base path to your github or gitlab or other code repo. Trailing slash is NOT required.
 3. By default link label will be "Edit This Page". You can change it using plugin config `label`.
 
+"edit-link-plus": {
+            "base": {
+              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "snowdreams1006.cn":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "snowdreams1006.tech":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master"
+            },
+            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+            "label": "编辑本页"
+        },
+
 - simple 
 
 All website is same config:

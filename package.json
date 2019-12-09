@@ -6,9 +6,6 @@
   "engines": {
     "gitbook": ">=2.5.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus.git"
@@ -32,13 +29,19 @@
         "title": "Base for the edit redirection",
         "required": true
       },
+      "defaultBase": {
+        "type": "string",
+        "title": "Default base for the edit redirection",
+        "required": false
+      },
       "label": {
         "type": [
           "string",
           "object"
         ],
         "title": "Label for the edit button",
-        "default": "Edit This Page"
+        "default": "Edit This Page",
+        "required": false
       }
     }
   },

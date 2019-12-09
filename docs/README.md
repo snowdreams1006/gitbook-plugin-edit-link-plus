@@ -13,50 +13,77 @@
 2. In `pluginsConfig`, Set `base` value which is base path to your github or gitlab or other code repo. Trailing slash is NOT required.
 3. By default link label will be "Edit This Page". You can change it using plugin config `label`.
 
+```json
+{
+    "plugins": ["edit-link-plus"],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+            "label": "Edit This Page"
+        }
+    }
+}
+```
+
+```json
+{
+    "plugins": ["edit-link-plus"],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+            "label": {
+                "en": "Edit This Page",
+                "zh": "编辑本页"
+            }
+        }
+    }
+}
+```
+
 #### Sample `book.json` file for gitbook version 2.0.1 and above
 
-```
+```json
 {
     "gitbook": "2.0.1",
     "plugins": ["edit-link"],
     "pluginsConfig": {
-            "edit-link": {
-                "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
-                "label": "Edit This Page"
-            }
+        "edit-link": {
+            "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
+            "label": "Edit This Page"
+        }
     }
 }
 ```
 
 #### Sample `book.json` file for gitbook version 2.0.1+ and multilingual labels
 
-```
+```json
 {
     "gitbook": "2.0.1",
     "plugins": ["edit-link"],
     "pluginsConfig": {
-            "edit-link": {
-                "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
-                "label": {
-                    "en": "Edit This Page",
-                    "de": "Seite bearbeiten"
-                }
+        "edit-link": {
+            "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
+            "label": {
+                "en": "Edit This Page",
+                "de": "Seite bearbeiten"
             }
+        }
     }
 }
 ```
 
 #### Sample `book.json` file for older gitbook versions <= 1.5.0
 
-```
+```json
 {
     "gitbook": "1.5.0",
     "plugins": ["edit-link@1.1.0"],
     "pluginsConfig": {
-            "edit-link": {
-                "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
-                "label": "Edit This Page"
-            }
+        "edit-link": {
+            "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
+            "label": "Edit This Page"
+        }
     }
 }
 ```

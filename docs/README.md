@@ -29,20 +29,22 @@
 1. In you gitbook's `book.json` file, add `edit-link-plus` to `plugins` list.
 2. In `pluginsConfig`, Set `base` value which is base path to your github or gitlab or other code repo. Trailing slash is NOT required.
 3. By default link label will be "Edit This Page". You can change it using plugin config `label`.
+4. In `pluginsConfig`, Set `defaultBase` value which is set as default base path to your github or gitlab or other code repo. Trailing slash is also NOT required.
+
+Here is simplest example :
 
 ```json
 {
     "plugins": ["edit-link-plus"],
     "pluginsConfig": {
         "edit-link-plus": {
-            "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
-            "label": "Edit This Page"
+            "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book"
         }
     }
 }
 ```
 
-Among them, the meanings of configuration parameters are as follows:
+In addition, the supported configuration options are as follows : 
 
 ```json
 "base": {
@@ -90,6 +92,40 @@ $ gitbook serve
 ```
 
 ## Example
+
+- [docs](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs/book.json)
+
+```json
+{
+    "plugins": ["edit-link-plus"],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": {
+              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
+              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
+              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master"
+            },
+            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
+            "label": "Edit This Page"
+        }
+    }
+}
+```
+
+- [example](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/example/book.json)
+
+```json
+{
+    "plugins": ["edit-link-plus"],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
+            "label": "Edit This Page"
+        }
+    }
+}
+```
+
 
 ### Sample `book.json` file
 
@@ -144,39 +180,6 @@ $ gitbook serve
 **Note**: Above snippet can be used as complete `book.json` file, if your book doesn't have one yet.
 
 **Github/Gitlab**: In string `...REPO/edit/BRANCH...`, you may replace `edit` with `tree` if you want source file to open in read-mode, rather than edit-mode directly on github/gitlab.
-
-- [docs](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs/book.json)
-
-```json
-{
-    "plugins": ["edit-link-plus"],
-    "pluginsConfig": {
-        "edit-link-plus": {
-            "base": {
-              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
-              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
-              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master"
-            },
-            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
-            "label": "Edit This Page"
-        }
-    }
-}
-```
-
-- [example](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/example/book.json)
-
-```json
-{
-    "plugins": ["edit-link-plus"],
-    "pluginsConfig": {
-        "edit-link-plus": {
-            "base": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
-            "label": "Edit This Page"
-        }
-    }
-}
-```
 
 ## Author
 

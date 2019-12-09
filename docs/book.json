@@ -48,7 +48,8 @@
               "snowdreams1006.cn":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
               "snowdreams1006.tech":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master"
             },
-            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master"
+            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+            "label": "Edit This Page"
         },
         "readmore": {
             "blogId": "15702-1569305559839-744",

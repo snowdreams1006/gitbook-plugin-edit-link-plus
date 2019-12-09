@@ -1,9 +1,176 @@
+# Welcome gitbook-plugin-edit-link-plus 👋
+
+[![npm:version](https://img.shields.io/npm/v/gitbook-plugin-edit-link-plus.svg)](https://www.npmjs.com/package/gitbook-plugin-edit-link-plus)
+[![npm:download](https://img.shields.io/npm/dt/gitbook-plugin-edit-link-plus.svg)](https://www.npmjs.com/package/gitbook-plugin-edit-link-plus)
+[![npm:prerequisite](https://img.shields.io/badge/gitbook-*-blue.svg)](https://www.npmjs.com/package/gitbook-plugin-edit-link-plus)
+[![github:documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus#readme)
+[![github:maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/graphs/commit-activity)
+[![npm:license](https://img.shields.io/npm/l/gitbook-plugin-edit-link-plus.svg)](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/LICENSE)
+[![github:snodreams1006](https://img.shields.io/badge/github-snowdreams1006-brightgreen.svg)](https://github.com/snowdreams1006)
+[![微信公众号:雪之梦技术驿站-brightgreen.svg](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7-%E9%9B%AA%E4%B9%8B%E6%A2%A6%E6%8A%80%E6%9C%AF%E9%A9%BF%E7%AB%99-brightgreen.svg)](https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg)
+
+> Gitbook plugin add \"edit this page\" link, and intelligent recognition to Github or Gitlab source repository.
 
 ### 🏠 [Homepage](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus#readme)
 
+- Github : [https://snowdreams1006.github.io/gitbook-plugin-edit-link-plus/](https://snowdreams1006.github.io/gitbook-plugin-edit-link-plus/)
+- GitLab: [https://snowdreams1006.gitlab.io/gitbook-plugin-edit-link-plus/](https://snowdreams1006.gitlab.io/gitbook-plugin-edit-link-plus/)
+- Gitee : [https://snowdreams1006.gitee.io/gitbook-plugin-edit-link-plus/](https://snowdreams1006.gitee.io/gitbook-plugin-edit-link-plus/)
+
 ## Screenshot
 
-![gitbook-plugin-edit-link](https://cloud.githubusercontent.com/assets/4115/5695161/f5b79002-99b8-11e4-821a-d2af6c729348.png)
+![edit-link-plus-use-preview.png](edit-link-plus-use-preview.png)
+
+## Usage
+
+### Step #1 - Update `book.json` file
+
+1. In you gitbook's `book.json` file, add `edit-link-plus` to `plugins` list.
+2. In `pluginsConfig`, Set `base` value which is base path to your github or gitlab or other code repo. Trailing slash is NOT required.
+3. By default link label will be "Edit This Page". You can change it using plugin config `label`.
+
+```json
+{
+    "plugins": ["edit-link-plus"],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
+            "label": "Edit This Page"
+        }
+    }
+}
+```
+
+Among them, the meanings of configuration parameters are as follows:
+
+```json
+"base": {
+  "type": [
+    "string",
+    "object"
+  ],
+  "title": "Base for the edit redirection",
+  "required": true
+},
+"defaultBase": {
+  "type": "string",
+  "title": "Default base for the edit redirection",
+  "required": false
+},
+"label": {
+  "type": [
+    "string",
+    "object"
+  ],
+  "title": "Label for the edit button",
+  "default": "Edit This Page",
+  "required": false
+}
+```
+
+### Step #2 - 运行 gitbook 相关命令
+
+- 运行 `gitbook install` 命令安装到本地项目
+
+```bash
+$ gitbook install
+```
+
+或者
+
+```bash
+npm install gitbook-plugin-edit-link-plus
+```
+
+- 运行 `gitbook build` 命令构建本地项目或者 `gitbook serve` 启动本地服务.
+
+```bash
+$ gitbook build
+```
+
+或者
+
+```bash
+$ gitbook serve
+```
+
+## 示例
+
+不仅 [gitbook-plugin-edit-link-plus](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus) **官方文档**已整合 `edit-link-plus` 版权保护插件,此外还提供了示例项目,详情参考 `example` 目录.
+
+- [官方文档](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/tree/master/docs)
+
+```json
+{
+    "title": "edit-link-plus 插件官方文档",
+    "author": "snowdreams1006",
+    "description": "gitbook-plugin-edit-link-plus 插件官方文档",
+    "plugins": [
+        "edit-link-plus"
+    ],
+    "pluginsConfig": {
+      "edit-link-plus":{
+            "favicon": "/favicon.ico",
+            "bookmark": "/bookmark.ico",
+            "appleTouchIcon152": "/apple-touch-icon-152.png",
+            "appleTouchIconPrecomposed152": "/apple-touch-icon-precomposed-152.png",
+            "appleTouchIconMore": {
+                "120x120": "/apple-touch-icon-120.png",
+                "180x180": "/apple-touch-icon-180.png"
+            },
+            "appleTouchIconPrecomposedMore": {
+                "120x120": "/apple-touch-icon-precomposed-120.png",
+                "180x180": "/apple-touch-icon-precomposed-180.png"
+            }
+        }
+    }
+}
+```
+
+- [官方示例](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/tree/master/example)
+
+
+```json
+{
+    "title": "edit-link-plus 插件官方简单示例",
+    "author": "snowdreams1006",
+    "description": "gitbook-plugin-edit-link-plus 插件官方简单示例",
+    "plugins": [
+        "edit-link-plus"
+    ],
+    "pluginsConfig":{
+        "edit-link-plus":{
+            "favicon": "favicon.ico",
+            "appleTouchIconPrecomposed152": "apple-touch-icon-precomposed-152.png"
+        }
+    }
+}
+```
+
+## 作者
+
+👤 **snowdreams1006**
+
+- Github: [@snowdreams1006](https://github.com/snowdreams1006)
+- Email: [snowdreams1006@163.com](mailto:snowdreams1006@163.com)
+
+## 🤝 贡献
+
+如果你想贡献自己的一份力量,欢迎提交 [`Issues`](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/issues) 或者 `Pull Request` 请求!
+
+## 支持
+
+如果本项目对你有所帮助,欢迎 ⭐️ [gitbook-plugin-edit-link-plus](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus) 项目,感谢你的支持与认可!
+
+## 📝 版权
+
+Copyright © 2019 [snowdreams1006](https://github.com/snowdreams1006).
+
+This project is [MIT](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/LICENSE) licensed.
+
+
+
+
 
 ## Usage
 
@@ -12,18 +179,6 @@
 1. In you gitbook's `book.json` file, add `edit-link` to `plugins` list.
 2. In `pluginsConfig`, Set `base` value which is base path to your github or gitlab or other code repo. Trailing slash is NOT required.
 3. By default link label will be "Edit This Page". You can change it using plugin config `label`.
-
-"edit-link-plus": {
-            "base": {
-              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "snowdreams1006.cn":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "snowdreams1006.tech":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master"
-            },
-            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-            "label": "编辑本页"
-        },
 
 - simple 
 

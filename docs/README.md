@@ -1,4 +1,4 @@
-# Welcome gitbook-plugin-edit-link-plus 
+# Welcome to gitbook-plugin-edit-link-plus 👋
 
 [![npm:version](https://img.shields.io/npm/v/gitbook-plugin-edit-link-plus.svg)](https://www.npmjs.com/package/gitbook-plugin-edit-link-plus)
 [![npm:download](https://img.shields.io/npm/dt/gitbook-plugin-edit-link-plus.svg)](https://www.npmjs.com/package/gitbook-plugin-edit-link-plus)
@@ -79,7 +79,7 @@ In addition, the supported configuration options are as follows :
 gitbook install
 ```
 
-Or you can run `npm install gitbook-plugin-edit-link-plus` to install locally.
+or you can run `npm install gitbook-plugin-edit-link-plus` to install locally.
 
 ```bash
 npm install gitbook-plugin-edit-link-plus
@@ -88,7 +88,7 @@ npm install gitbook-plugin-edit-link-plus
 2. Build your book (`gitbook build`) or serve (`gitbook serve`) as usual.
 
 ```bash
-$ gitbook serve
+gitbook serve
 ```
 
 ## Example

@@ -1,12 +1,11 @@
 {
-    "title": "edit-link-plus 插件官方文档",
+    "title": "edit-link-plus docs",
     "author": "snowdreams1006",
-    "description": "gitbook-plugin-edit-link-plus 插件官方文档",
-    "language": "zh-hans",
+    "description": "gitbook-plugin-edit-link-plus docs",
     "gitbook": "3.2.3",
     "links": {
         "sidebar": {
-            "技术博客": "https://snowdreams1006.tech/"
+            "blog": "https://snowdreams1006.tech/"
         }
     },
     "plugins": [

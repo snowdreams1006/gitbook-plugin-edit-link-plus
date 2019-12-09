@@ -5,7 +5,7 @@
     "gitbook": "3.2.3",
     "links": {
         "sidebar": {
-            "blob": "https://snowdreams1006.tech/"
+            "blog": "https://snowdreams1006.tech/"
         }
     },
     "plugins": [

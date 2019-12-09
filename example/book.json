@@ -1,0 +1,25 @@
+{
+    "title": "edit-link-plus example",
+    "author": "snowdreams1006",
+    "description": "gitbook-plugin-edit-link-plus example",
+    "gitbook": "3.2.3",
+    "links": {
+        "sidebar": {
+            "blob": "https://snowdreams1006.tech/"
+        }
+    },
+    "plugins": [
+        "edit-link-plus"
+    ],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": {
+              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs",
+              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs",
+              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs"
+            },
+            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs",
+            "label": "Edit This Page"
+        }
+    }
+}

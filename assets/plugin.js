@@ -7,7 +7,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         
         // Select the current environment from the supported multiple environments
         if (typeof base === 'object') {
-            var currentDomain = location.host;
+            var currentDomain = location.hostname;
             $.each(base, function(domain, source) {
                 if (currentDomain == domain) {
                     base = source;

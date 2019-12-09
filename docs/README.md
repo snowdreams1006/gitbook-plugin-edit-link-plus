@@ -68,33 +68,81 @@ Among them, the meanings of configuration parameters are as follows:
 }
 ```
 
-### Step #2 - 运行 gitbook 相关命令
+### Step #2 - gitbook commands
 
-- 运行 `gitbook install` 命令安装到本地项目
+1. Run `gitbook install`. It will automatically install `edit-link-plus` gitbook plugin for your book. This is needed only once.
 
 ```bash
-$ gitbook install
+gitbook install
 ```
 
-或者
+Or you can run `npm install gitbook-plugin-edit-link-plus` to install locally.
 
 ```bash
 npm install gitbook-plugin-edit-link-plus
 ```
 
-- 运行 `gitbook build` 命令构建本地项目或者 `gitbook serve` 启动本地服务.
-
-```bash
-$ gitbook build
-```
-
-或者
+2. Build your book (`gitbook build`) or serve (`gitbook serve`) as usual.
 
 ```bash
 $ gitbook serve
 ```
 
-## 示例
+## Example
+
+### Sample `book.json` file
+
+```json
+{
+    "plugins": ["edit-link-plus"],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
+            "label": "Edit This Page"
+        }
+    }
+}
+```
+
+### Sample `book.json` file for Multi-source base
+
+```json
+{
+    "plugins": ["edit-link-plus"],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": {
+              "USER.github.io":"https://github.com/USER/REPO/edit/BRANCH/path/to/book",
+              "USER.gitlab.io":"https://gitlab.com/USER/REPO/edit/BRANCH/path/to/book",
+              "USER.gitee.io":"https://gitee.com/USER/REPO/edit/BRANCH/path/to/book",
+              "CUSTOME DOMAIN":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master"
+            },
+            "label": "Edit This Page"
+        }
+    }
+}
+```
+
+### Sample `book.json` file for multilingual labels
+
+```json
+{
+    "plugins": ["edit-link-plus"],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
+            "label": {
+                "en": "Edit This Page",
+                "de": "Seite bearbeiten"
+            }
+        }
+    }
+}
+```
+
+**Note**: Above snippet can be used as complete `book.json` file, if your book doesn't have one yet.
+
+**Github/Gitlab**: In string `...REPO/edit/BRANCH...`, you may replace `edit` with `tree` if you want source file to open in read-mode, rather than edit-mode directly on github/gitlab.
 
 不仅 [gitbook-plugin-edit-link-plus](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus) **官方文档**已整合 `edit-link-plus` 版权保护插件,此外还提供了示例项目,详情参考 `example` 目录.
 
@@ -102,26 +150,16 @@ $ gitbook serve
 
 ```json
 {
-    "title": "edit-link-plus 插件官方文档",
-    "author": "snowdreams1006",
-    "description": "gitbook-plugin-edit-link-plus 插件官方文档",
-    "plugins": [
-        "edit-link-plus"
-    ],
+    "plugins": ["edit-link-plus"],
     "pluginsConfig": {
-      "edit-link-plus":{
-            "favicon": "/favicon.ico",
-            "bookmark": "/bookmark.ico",
-            "appleTouchIcon152": "/apple-touch-icon-152.png",
-            "appleTouchIconPrecomposed152": "/apple-touch-icon-precomposed-152.png",
-            "appleTouchIconMore": {
-                "120x120": "/apple-touch-icon-120.png",
-                "180x180": "/apple-touch-icon-180.png"
+        "edit-link-plus": {
+            "base": {
+              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
+              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
+              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master"
             },
-            "appleTouchIconPrecomposedMore": {
-                "120x120": "/apple-touch-icon-precomposed-120.png",
-                "180x180": "/apple-touch-icon-precomposed-180.png"
-            }
+            "label": "Edit This Page",
+            "label": "Edit This Page"
         }
     }
 }
@@ -314,22 +352,7 @@ auto jump to source site according to pre-configuration with multiple language
 
 **Github/Gitlab**: In string `...REPO/edit/BRANCH...`, you may replace `edit` with `tree` if you want source file to open in read-mode, rather than edit-mode directly on github/gitlab.
 
-### Step #2 - gitbook commands
 
-1. Run `gitbook install`. It will automatically install `edit-link` gitbook plugin for your book. This is needed only once.
-2. Build your book (`gitbook build`) or serve (`gitbook serve`) as usual.
-
-## Install
-
-```sh
-npm install
-```
-
-## Run tests
-
-```sh
-npm run test
-```
 
 ## Author
 

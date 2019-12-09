@@ -13,6 +13,10 @@
 2. In `pluginsConfig`, Set `base` value which is base path to your github or gitlab or other code repo. Trailing slash is NOT required.
 3. By default link label will be "Edit This Page". You can change it using plugin config `label`.
 
+- simple 
+
+All website is same config:
+
 ```json
 {
     "plugins": ["edit-link-plus"],
@@ -25,12 +29,63 @@
 }
 ```
 
+All website is same config with multipart language :
+
 ```json
 {
     "plugins": ["edit-link-plus"],
     "pluginsConfig": {
         "edit-link-plus": {
             "base": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+            "label": {
+                "en": "Edit This Page",
+                "zh": "编辑本页"
+            }
+        }
+    }
+}
+```
+
+- advance
+
+auto jump to source site according to pre-configuration
+
+```json
+{
+    "plugins": ["edit-link-plus"],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": {
+              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "snowdreams1006.cn":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "www.snowdreams1006.cn":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "snowdreams1006.tech":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "www.snowdreams1006.tech":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master"
+            },
+            "label": "Edit This Page"
+        }
+    }
+}
+```
+
+auto jump to source site according to pre-configuration with multiple language
+
+```json
+{
+    "plugins": ["edit-link-plus"],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": {
+              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "snowdreams1006.cn":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "www.snowdreams1006.cn":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "snowdreams1006.tech":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
+              "www.snowdreams1006.tech":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master"
+            },
             "label": {
                 "en": "Edit This Page",
                 "zh": "编辑本页"

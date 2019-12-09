@@ -93,7 +93,9 @@ $ gitbook serve
 
 ## Example
 
-- [docs](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs/book.json)
+- Official documentation configuration file
+
+> [https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/docs/book.json](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/docs/book.json)
 
 ```json
 {
@@ -101,33 +103,46 @@ $ gitbook serve
     "pluginsConfig": {
         "edit-link-plus": {
             "base": {
-              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
-              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
-              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master"
+              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs",
+              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs",
+              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs"
             },
-            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
+            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs",
             "label": "Edit This Page"
         }
     }
 }
 ```
 
-- [example](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/example/book.json)
+- Official example configuration file
+
+> [https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/example/book.json](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/example/book.json)
 
 ```json
 {
     "plugins": ["edit-link-plus"],
     "pluginsConfig": {
         "edit-link-plus": {
-            "base": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
-            "label": "Edit This Page"
+            "base": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/example"
         }
     }
 }
 ```
 
+### Sample `book.json` file 
 
-### Sample `book.json` file
+```json
+{
+    "plugins": ["edit-link-plus"],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book"
+        }
+    }
+}
+```
+
+or you can add `label` to custom your label:
 
 ```json
 {
@@ -135,7 +150,7 @@ $ gitbook serve
     "pluginsConfig": {
         "edit-link-plus": {
             "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
-            "label": "Edit This Page"
+            "label": "点我反馈"
         }
     }
 }
@@ -152,8 +167,9 @@ $ gitbook serve
               "USER.github.io":"https://github.com/USER/REPO/edit/BRANCH/path/to/book",
               "USER.gitlab.io":"https://gitlab.com/USER/REPO/edit/BRANCH/path/to/book",
               "USER.gitee.io":"https://gitee.com/USER/REPO/edit/BRANCH/path/to/book",
-              "CUSTOME DOMAIN":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master"
+              "CUSTOME DOMAIN":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs"
             },
+            "defaultBase": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
             "label": "Edit This Page"
         }
     }

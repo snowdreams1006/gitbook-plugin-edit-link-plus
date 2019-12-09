@@ -144,9 +144,7 @@ $ gitbook serve
 
 **Github/Gitlab**: In string `...REPO/edit/BRANCH...`, you may replace `edit` with `tree` if you want source file to open in read-mode, rather than edit-mode directly on github/gitlab.
 
-不仅 [gitbook-plugin-edit-link-plus](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus) **官方文档**已整合 `edit-link-plus` 版权保护插件,此外还提供了示例项目,详情参考 `example` 目录.
-
-- [官方文档](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/tree/master/docs)
+- [docs](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs/book.json)
 
 ```json
 {
@@ -158,37 +156,32 @@ $ gitbook serve
               "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
               "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master"
             },
-            "label": "Edit This Page",
+            "defaultBase": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
             "label": "Edit This Page"
         }
     }
 }
 ```
 
-- [官方示例](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/tree/master/example)
-
+- [example](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/example/book.json)
 
 ```json
 {
-    "title": "edit-link-plus 插件官方简单示例",
-    "author": "snowdreams1006",
-    "description": "gitbook-plugin-edit-link-plus 插件官方简单示例",
-    "plugins": [
-        "edit-link-plus"
-    ],
-    "pluginsConfig":{
-        "edit-link-plus":{
-            "favicon": "favicon.ico",
-            "appleTouchIconPrecomposed152": "apple-touch-icon-precomposed-152.png"
+    "plugins": ["edit-link-plus"],
+    "pluginsConfig": {
+        "edit-link-plus": {
+            "base": "https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master",
+            "label": "Edit This Page"
         }
     }
 }
 ```
 
-## 作者
+## Author
 
 👤 **snowdreams1006**
 
+- Website: [snowdreams1006.tech](https://snowdreams1006.tech/)
 - Github: [@snowdreams1006](https://github.com/snowdreams1006)
 - Email: [snowdreams1006@163.com](mailto:snowdreams1006@163.com)
 
@@ -251,113 +244,6 @@ All website is same config with multipart language :
 }
 ```
 
-- advance
-
-auto jump to source site according to pre-configuration
-
-```json
-{
-    "plugins": ["edit-link-plus"],
-    "pluginsConfig": {
-        "edit-link-plus": {
-            "base": {
-              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "snowdreams1006.cn":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "www.snowdreams1006.cn":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "snowdreams1006.tech":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "www.snowdreams1006.tech":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master"
-            },
-            "label": "Edit This Page"
-        }
-    }
-}
-```
-
-auto jump to source site according to pre-configuration with multiple language
-
-```json
-{
-    "plugins": ["edit-link-plus"],
-    "pluginsConfig": {
-        "edit-link-plus": {
-            "base": {
-              "snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "snowdreams1006.cn":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "www.snowdreams1006.cn":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "snowdreams1006.tech":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master",
-              "www.snowdreams1006.tech":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master"
-            },
-            "label": {
-                "en": "Edit This Page",
-                "zh": "编辑本页"
-            }
-        }
-    }
-}
-```
-
-#### Sample `book.json` file for gitbook version 2.0.1 and above
-
-```json
-{
-    "gitbook": "2.0.1",
-    "plugins": ["edit-link"],
-    "pluginsConfig": {
-        "edit-link": {
-            "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
-            "label": "Edit This Page"
-        }
-    }
-}
-```
-
-#### Sample `book.json` file for gitbook version 2.0.1+ and multilingual labels
-
-```json
-{
-    "gitbook": "2.0.1",
-    "plugins": ["edit-link"],
-    "pluginsConfig": {
-        "edit-link": {
-            "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
-            "label": {
-                "en": "Edit This Page",
-                "de": "Seite bearbeiten"
-            }
-        }
-    }
-}
-```
-
-#### Sample `book.json` file for older gitbook versions <= 1.5.0
-
-```json
-{
-    "gitbook": "1.5.0",
-    "plugins": ["edit-link@1.1.0"],
-    "pluginsConfig": {
-        "edit-link": {
-            "base": "https://github.com/USER/REPO/edit/BRANCH/path/to/book",
-            "label": "Edit This Page"
-        }
-    }
-}
-```
-
-**Note**: Above snippet can be used as complete `book.json` file, if your book doesn't have one yet.
-
-**Github/Gitlab**: In string `...REPO/edit/BRANCH...`, you may replace `edit` with `tree` if you want source file to open in read-mode, rather than edit-mode directly on github/gitlab.
-
-
-
-## Author
-
-* Website: https://snowdreams1006.github.io/
-* Github: [@snowdreams1006](https://github.com/snowdreams1006)
 
 ## Contributing
 

@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [简介](README.md)
 * [gitbook-official](https://snowdreams1006.github.io/gitbook-official/)
 * [gitbook-plugin-mygitalk](https://snowdreams1006.github.io/gitbook-plugin-mygitalk/)
 * [gitbook-plugin-readmore](https://snowdreams1006.github.io/gitbook-plugin-readmore/)

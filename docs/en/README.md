@@ -12,8 +12,6 @@
 
 > Gitbook plugin add "edit this page" link, and intelligent recognition to `Github` or `Gitlab` source repository.
 
-[English](/en/) | [中文](/zh/)
-
 ### 🏠 [Homepage](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus#readme)
 
 - Github : [https://snowdreams1006.github.io/gitbook-plugin-edit-link-plus/](https://snowdreams1006.github.io/gitbook-plugin-edit-link-plus/)

@@ -12,6 +12,8 @@
 
 > 添加“编辑此页”链接并智能识别Github或Gitlab源存储库的Gitbook插件
 
+[中文](./README_zh.md) | [English](./README.md)
+
 ### 🏠 [主页](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus#readme)
 
 - Github : [https://snowdreams1006.github.io/gitbook-plugin-edit-link-plus/](https://snowdreams1006.github.io/gitbook-plugin-edit-link-plus/)

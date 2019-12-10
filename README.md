@@ -12,7 +12,7 @@
 
 > Gitbook plugin add "edit this page" link, and intelligent recognition to Github or Gitlab source repository.
 
-[中文](README_zh.md) | [English](README.md)
+[中文](./README_zh.md) | [English](./README.md)
 
 ### 🏠 [Homepage](https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus#readme)
 

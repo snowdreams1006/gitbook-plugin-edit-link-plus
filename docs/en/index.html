@@ -17,10 +17,6 @@
     
             
                 
-                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -54,7 +50,6 @@
     
     
     
-    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -64,17 +59,6 @@
 
     
     
-
-    <style>
-    @media only screen and (max-width: 640px) {
-        .book-header .hidden-mobile {
-            display: none;
-        }
-    }
-    </style>
-    <script>
-        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"snowdreams1006","repo":"gitbook-plugin-readmore","type":"star","size":"small"}]};
-    </script>
 
     
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -314,7 +298,7 @@
                                 <section class="normal markdown-section">
                                 
                                 
-                <div id="vip-container">
+                <div id="container">
                     <h1 id="welcome-to-gitbook-plugin-edit-link-plus-&#x1F44B;">Welcome to gitbook-plugin-edit-link-plus &#x1F44B;</h1>
 <p><a href="https://www.npmjs.com/package/gitbook-plugin-edit-link-plus" target="_blank"><img src="https://img.shields.io/npm/v/gitbook-plugin-edit-link-plus.svg" alt="npm:version"></a>
 <a href="https://www.npmjs.com/package/gitbook-plugin-edit-link-plus" target="_blank"><img src="https://img.shields.io/npm/dt/gitbook-plugin-edit-link-plus.svg" alt="npm:download"></a>
@@ -323,19 +307,10 @@
 <a href="https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/graphs/commit-activity" target="_blank"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="github:maintenance"></a>
 <a href="https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/npm/l/gitbook-plugin-edit-link-plus.svg" alt="npm:license"></a>
 <a href="https://github.com/snowdreams1006" target="_blank"><img src="https://img.shields.io/badge/github-snowdreams1006-brightgreen.svg" alt="github:snodreams1006"></a>
-<a href="https://snowdreams1006.tech/" target="_blank"><img src="https://img.shields.io/badge/website-snowdreams1006.tech-brightgreen.svg" alt="website:snodreams1006.tech"></a>
 <a href="https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg" target="_blank"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7-%E9%9B%AA%E4%B9%8B%E6%A2%A6%E6%8A%80%E6%9C%AF%E9%A9%BF%E7%AB%99-brightgreen.svg" alt="&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;:&#x96EA;&#x4E4B;&#x68A6;&#x6280;&#x672F;&#x9A7F;&#x7AD9;-brightgreen.svg"></a></p>
 <blockquote>
-<p>Gitbook plugin add &quot;edit this page&quot; link, and intelligent recognition to <code>Github</code> or <code>Gitlab</code> source repository.</p>
+<p>Gitbook plugin add &quot;edit this page&quot; link, and intelligent recognition to Github or Gitlab source repository.</p>
 </blockquote>
-<h3 id="&#x1F3E0;-homepage">&#x1F3E0; <a href="https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus#readme" target="_blank">Homepage</a></h3>
-<ul>
-<li>Github : <a href="https://snowdreams1006.github.io/gitbook-plugin-edit-link-plus/" target="_blank">https://snowdreams1006.github.io/gitbook-plugin-edit-link-plus/</a></li>
-<li>GitLab: <a href="https://snowdreams1006.gitlab.io/gitbook-plugin-edit-link-plus/" target="_blank">https://snowdreams1006.gitlab.io/gitbook-plugin-edit-link-plus/</a></li>
-<li>Gitee : <a href="https://snowdreams1006.gitee.io/gitbook-plugin-edit-link-plus/" target="_blank">https://snowdreams1006.gitee.io/gitbook-plugin-edit-link-plus/</a></li>
-</ul>
-<h2 id="screenshot">Screenshot</h2>
-<p><img src="edit-link-plus-use-preview.png" alt="edit-link-plus-use-preview.png"></p>
 <h2 id="usage">Usage</h2>
 <h3 id="step-1---update-bookjson-file">Step #1 - Update <code>book.json</code> file</h3>
 <ol>
@@ -393,42 +368,6 @@
 <pre><code class="lang-bash">gitbook serve
 </code></pre>
 <h2 id="example">Example</h2>
-<ul>
-<li>Official documentation configuration file</li>
-</ul>
-<blockquote>
-<p><a href="https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/docs/book.json" target="_blank">https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/docs/book.json</a></p>
-</blockquote>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;plugins&quot;</span>: [<span class="hljs-string">&quot;edit-link-plus&quot;</span>],
-    <span class="hljs-string">&quot;pluginsConfig&quot;</span>: {
-        <span class="hljs-string">&quot;edit-link-plus&quot;</span>: {
-            <span class="hljs-string">&quot;base&quot;</span>: {
-              <span class="hljs-string">&quot;snowdreams1006.github.io&quot;</span>:<span class="hljs-string">&quot;https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs&quot;</span>,
-              <span class="hljs-string">&quot;snowdreams1006.gitlab.io&quot;</span>:<span class="hljs-string">&quot;https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs&quot;</span>,
-              <span class="hljs-string">&quot;snowdreams1006.gitee.io&quot;</span>:<span class="hljs-string">&quot;https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs&quot;</span>
-            },
-            <span class="hljs-string">&quot;defaultBase&quot;</span>: <span class="hljs-string">&quot;https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs&quot;</span>,
-            <span class="hljs-string">&quot;label&quot;</span>: <span class="hljs-string">&quot;Edit This Page&quot;</span>
-        }
-    }
-}
-</code></pre>
-<ul>
-<li>Official example configuration file</li>
-</ul>
-<blockquote>
-<p><a href="https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/example/book.json" target="_blank">https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/example/book.json</a></p>
-</blockquote>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;plugins&quot;</span>: [<span class="hljs-string">&quot;edit-link-plus&quot;</span>],
-    <span class="hljs-string">&quot;pluginsConfig&quot;</span>: {
-        <span class="hljs-string">&quot;edit-link-plus&quot;</span>: {
-            <span class="hljs-string">&quot;base&quot;</span>: <span class="hljs-string">&quot;https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/example&quot;</span>
-        }
-    }
-}
-</code></pre>
 <h3 id="sample-bookjson-file">Sample <code>book.json</code> file</h3>
 <pre><code class="lang-json">{
     <span class="hljs-string">&quot;plugins&quot;</span>: [<span class="hljs-string">&quot;edit-link-plus&quot;</span>],
@@ -494,6 +433,7 @@
 <p>Contributions, issues and feature requests are welcome!<br>Feel free to check <a href="https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/issues" target="_blank">issues page</a>.</p>
 <h2 id="show-your-support">Show your support</h2>
 <p>Give a <a href="https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus" target="_blank"><strong>Star</strong></a> if this project helped you!</p>
+<p><img src="https://snowdreams1006.github.io/snowdreams1006-wechat-donate.jpg" alt="snowdreams1006-wechat-donate.jpg"></p>
 <h2 id="copyright">Copyright</h2>
 <p>Copyright &#xA9; 2019 <a href="https://github.com/snowdreams1006" target="_blank">snowdreams1006</a>.</p>
 <p>This project is <a href="https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/blob/master/LICENSE" target="_blank">MIT</a> licensed.</p>
@@ -513,16 +453,19 @@ Source: &#x96EA;&#x4E4B;&#x68A6;&#x6280;&#x672F;&#x9A7F;&#x7AD9;
 This article was originally published in&#x300C;&#x96EA;&#x4E4B;&#x68A6;&#x6280;&#x672F;&#x9A7F;&#x7AD9;&#x300D;,Reproduced please indicate the source, thank you for cooperation!
 </code></pre>
 <p><img src="https://snowdreams1006.github.io/snowdreams1006-wechat-open.png" alt="https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"></p>
-<div id="gitalk-container"></div>
+
                 </div>
-                <script src="https://my.openwrite.cn/js/readmore.js"></script>
+                <script src="https://readmore.openwrite.cn/js/readmore-2.0.js" type="text/javascript"></script>
+                <script src="https://blog.snowdreams1006.cn/assets/js/readmore.js" type="text/javascript"></script>
                 <script>
-                    var isMobile = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);
-                    if (!isMobile) {
-                        var btw = new BTWPlugin();
-                        btw.init({"blogId":"15702-1569305559839-744","name":"雪之梦技术驿站","qrcode":"https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg","keyword":"vip","id":"vip-container"});
-                    }
+                    var btw = new BTWPlugin();
+                    btw.init({"blogId":"15702-1569305559839-744","name":"雪之梦技术驿站","qrcode":"https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg","keyword":"vip"});
+                    (function anonymous(
+                    ) {
+                    debugger
+                    })
                 </script>
+                
                                 
                                 </section>
                             
@@ -557,7 +500,7 @@ This article was originally published in&#x300C;&#x96EA;&#x4E4B;&#x68A6;&#x6280;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"gitbook-official","level":"1.2","depth":1,"url":"https://snowdreams1006.github.io/gitbook-official/","ref":"https://snowdreams1006.github.io/gitbook-official/","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon-absolute","github-buttons","edit-link-plus","readmore","copyright","mygitalk","multilingual-index"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"copyright":{"site":"https://snowdreams1006.github.io/gitbook-plugin-edit-link-plus","author":"雪之梦技术驿站","website":"雪之梦技术驿站","image":"https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"},"search":{},"edit-link-plus":{"label":"Edit This Page","base":{"snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs","snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs","snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs"},"defaultBase":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs"},"readmore":{"blogId":"15702-1569305559839-744","name":"雪之梦技术驿站","qrcode":"https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg","keyword":"vip"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"favicon-absolute":{"appleTouchIconMore":{"120x120":"/apple-touch-icon-120.png","180x180":"/apple-touch-icon-180.png"},"appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconPrecomposedMore":{"120x120":"/apple-touch-icon-precomposed-120.png","180x180":"/apple-touch-icon-precomposed-180.png"},"favicon":"/favicon.ico","bookmark":"/bookmark.ico","appleTouchIcon152":"/apple-touch-icon-152.png"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"multilingual-index":{"enableSuper":false,"index":"index.html"},"github-buttons":{"buttons":[{"user":"snowdreams1006","repo":"gitbook-plugin-readmore","type":"star","size":"small"}]},"mygitalk":{"flipMoveOptions":{},"clientID":"3f62415a283d19cbd696","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["snowdreams1006"],"createIssueManually":false,"distractionFreeMode":false,"repo":"gitbook-plugin-edit-link-plus","owner":"snowdreams1006","enableHotKey":true,"clientSecret":"aed0e1db0620bf5d0e3a3f0225f801997ad74e58","pagerDirection":"last","labels":["Gitalk"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"snowdreams1006","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"edit-link-plus docs","language":"en","links":{"sidebar":{"blog":"https://snowdreams1006.tech/"}},"gitbook":"*","description":"gitbook-plugin-edit-link-plus docs"},"file":{"path":"README.md","mtime":"2019-12-10T05:40:52.111Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-10T06:44:24.828Z"},"basePath":".","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"gitbook-official","level":"1.2","depth":1,"url":"https://snowdreams1006.github.io/gitbook-official/","ref":"https://snowdreams1006.github.io/gitbook-official/","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon-absolute","edit-link-plus","readmore","copyright","multilingual-index"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"copyright":{"copyProtect":true,"site":"https://snowdreams1006.github.io/gitbook-plugin-edit-link-plus","author":"雪之梦技术驿站","website":"雪之梦技术驿站","image":"https://snowdreams1006.github.io/snowdreams1006-wechat-open.png"},"search":{},"edit-link-plus":{"label":"Edit This Page","base":{"snowdreams1006.github.io":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs","snowdreams1006.gitlab.io":"https://gitlab.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs","snowdreams1006.gitee.io":"https://gitee.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs"},"defaultBase":"https://github.com/snowdreams1006/gitbook-plugin-edit-link-plus/edit/master/docs"},"readmore":{"blogId":"15702-1569305559839-744","name":"雪之梦技术驿站","qrcode":"https://snowdreams1006.github.io/snowdreams1006-wechat-public.jpeg","keyword":"vip"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"favicon-absolute":{"favicon":"/favicon.ico","appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconMore":{"120x120":"/apple-touch-icon-120.png","180x180":"/apple-touch-icon-180.png"},"appleTouchIconPrecomposedMore":{"120x120":"/apple-touch-icon-precomposed-120.png","180x180":"/apple-touch-icon-precomposed-180.png"},"bookmark":"/bookmark.ico","appleTouchIcon152":"/apple-touch-icon-152.png"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"multilingual-index":{"enableSuper":false,"index":"index.html"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"snowdreams1006","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"edit-link-plus docs","language":"en","links":{"sidebar":{"blog":"https://snowdreams1006.tech/"}},"gitbook":"*","description":"gitbook-plugin-edit-link-plus docs"},"file":{"path":"README.md","mtime":"2024-08-15T03:11:10.373Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-08-15T03:11:19.336Z"},"basePath":".","book":{"language":"en"}});
         });
     </script>
 </div>
@@ -567,27 +510,11 @@ This article was originally published in&#x300C;&#x96EA;&#x4E4B;&#x68A6;&#x6280;
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
-        
-    
-        
         <script src="../gitbook/gitbook-plugin-edit-link-plus/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-copyright/copyright.js"></script>
-        
-    
-        
-        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
-        
-    
-        
-        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        <script src="../gitbook/gitbook-plugin-copyright/plugin.js"></script>
         
     
         

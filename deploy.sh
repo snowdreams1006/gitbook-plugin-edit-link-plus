@@ -3,7 +3,6 @@
 # copy info
 cp -rf README.md docs/en/
 cp -rf README_zh.md docs/zh/README.md
-cp -rf README_zh.md example/README.md
 
 # status latest
 git status

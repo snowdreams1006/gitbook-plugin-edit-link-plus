@@ -9,11 +9,14 @@
         }
     },
     "plugins": [
+        "last-update-time",
         "favicon-absolute",
-        "edit-link-plus",
+        "copy-code-button",
         "copyright",
         "readmore",
-        "multilingual-index"
+        "edit-link-plus",
+        "multilingual-index",
+        "icp"
     ],
     "pluginsConfig": {
         "favicon-absolute": {
@@ -54,6 +57,11 @@
         "multilingual-index": {
             "enableSuper": false,
             "index":"index.html"
+        },
+        "icp": {
+            "label": "&copy snowdreams1006 版权所有",
+            "number": "浙ICP备18042346号",
+            "link": "https://beian.miit.gov.cn/"
         }
     }
 }

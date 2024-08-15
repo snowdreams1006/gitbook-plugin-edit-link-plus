@@ -10,7 +10,6 @@
 * [gitbook-plugin-favicon-absolute](https://snowdreams1006.github.io/gitbook-plugin-favicon-absolute/)
 * [gitbook-plugin-edit-link-plus](https://snowdreams1006.github.io/gitbook-plugin-edit-link-plus/)
 * [gitbook-plugin-multilingual-index](https://snowdreams1006.github.io/gitbook-plugin-multilingual-index/)
-* [gitbook-plugin-simple-mind-map](https://snowdreams1006.github.io/gitbook-plugin-simple-mind-map/)
 * [gitbook-plugin-punctuation-converter](https://snowdreams1006.github.io/gitbook-plugin-punctuation-converter/)
 * [gitbook-plugin-baidu-tongji-with-multiple-channel](https://snowdreams1006.github.io/gitbook-plugin-baidu-tongji-with-multiple-channel/)
 * [gitbook-plugin-google-tongji-with-multiple-channel](https://snowdreams1006.github.io/gitbook-plugin-google-tongji-with-multiple-channel/)
